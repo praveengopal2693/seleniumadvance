@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="LambaTestSuite" parallel="tests">
+ 
+ 
+  <test name="MACTEST1">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="version" value="88.0"/>
+  <parameter name="platform" value="macos 10.13"/>
+    <classes>
+      <class name="lambda.TestNGToDo"/>
+    </classes>
+  </test> <!-- Test -->
+
+ <test name="WIN10TESTS">
+  <parameter name="browser" value="IE"/>
+  <parameter name="version" value="11.0"/>
+  <parameter name="platform" value="WIN10"/>
+    <classes>
+      <class name="lambda.TestNGToDo"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="MACTEST">
+  <parameter name="browser" value="Edge"/>
+  <parameter name="version" value="87.0"/>
+  <parameter name="platform" value="macos 10.13"/>
+    <classes>
+      <class name="lambda.TestNGToDo"/>
+    </classes>
+  </test> <!-- Test -->
+
+<test name="WIN7TEST">
+  <parameter name="browser" value="firefox"/>
+  <parameter name="version" value="82.0"/>
+  <parameter name="platform" value="WIN7"/>
+    <classes>
+      <class name="lambda.TestNGToDo"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite>
